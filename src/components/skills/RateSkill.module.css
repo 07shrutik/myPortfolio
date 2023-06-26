@@ -1,0 +1,54 @@
+.rateContainer{
+  display: flex;
+  flex-direction: column;
+}
+.labels{
+  margin-top: 20px;
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.progressBorder {
+  position: relative;
+  width: 100%;
+  background-color: rgba(61, 61, 61, 0.1);
+  height: 5px;
+  /* border: 1px solid rgba(0, 0, 0, 0.6); */
+    border-radius: 5px;
+  }
+  
+  .progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    /* background-color: #e40b0b; */
+    color: aqua;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    color: #f00c0c;
+    /* color: aqua; */
+    /* background-color: rgb(224, 26, 26); */
+    border-radius: 5px;
+  }
+  
+  label{
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .circle {
+    position: absolute;
+    top: -4px;
+    left: 74%;
+    width: 12px;
+    height: 12px;
+    /* background-color: #000; */
+    border-radius: 50%;
+  }

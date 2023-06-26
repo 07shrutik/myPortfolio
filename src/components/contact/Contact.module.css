@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    top:0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.rightContainer{
+    /* border: 1px solid black; */
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/7130496/pexels-photo-7130496.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+
+    /* background-image: url("../../assets/smoke.jpg"); */
+    background-position: center;
+    background-size:100%;
+    /* align-items: center; */
+    /* background-position: calc(100% - 100%) right; */
+
+    /* border: 1px solid black; */
+    height: 90vh;
+    background-color:  #EFEFEF;
+    width: 65vw;
+}
+.rightContainer p:first-child {
+    color: #3b3939;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 5px;
+}
+
+.rightContainer p:nth-of-type(2) {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.rightContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  form label {
+      margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .subjectField {
+    height: 50px;
+  }
+  
+  .submitButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .image{
+    height: 200px;
+    width: 200px;
+  }.socialIcons{
+    /* border: 1px solid black; */
+    /* padding: 17px; */
+    margin-top: 33px;
+    /* margin-left: 45px; */
+    margin-left: 45px;
+    height: 60px;
+    display: flex;
+    gap: 30px;
+}
+.icons{
+    cursor: pointer;
+    font-size: 3rem;
+    /* transition: all 10s ease-in; */
+}
+
+.icons:hover {
+    font-size: 4rem;
+    transition: font-size 1s ease-in-out;
+    margin: 0;
+  }

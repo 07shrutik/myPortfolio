@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    top:0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.rightContainer{
+    /* border: 1px solid black; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/08/18/55/coconut-tree-1892861_640.png");
+    background-repeat: no-repeat;
+
+    /* background-image: url("../../assets/smoke.jpg"); */
+    background-position: right;
+    /* align-items: center; */
+    /* background-position: calc(100% - 100%) right; */
+
+    /* border: 1px solid black; */
+    height: 90vh;
+    background-color:  #EFEFEF;
+    width: 65vw;
+}
+.rightContainer p:first-child{
+    color:#3a3a3a;
+    font-size: 65px;
+    font-family:'ProximaNovaT';
+}
+.rightContainer p{
+    margin: 0;
+    margin-top: 30px;
+    width: 65%;
+    letter-spacing: 0.5px;
+    margin-left: 45px;
+    color:#838383;
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif;
+}
+.socialIcons{
+    /* border: 1px solid black; */
+    /* padding: 17px; */
+    margin-top: 33px;
+    /* margin-left: 45px; */
+    margin-left: 45px;
+    height: 60px;
+    display: flex;
+    gap: 30px;
+}
+.icons{
+    cursor: pointer;
+    font-size: 3rem;
+    /* transition: all 10s ease-in; */
+}
+
+.icons:hover {
+    font-size: 4rem;
+    transition: font-size 1s ease-in-out;
+    margin: 0;
+  }

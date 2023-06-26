@@ -1,0 +1,139 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    top:0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.leftContainer{
+    display: flex;
+    background-color:  #F5F5F5;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 25vw;
+}
+.leftContainer p{
+    margin: 0;
+    color: #2c98f0;
+}
+.leftContainer p:last-child{
+    margin-top: 20px;
+    color:black;
+}
+.leftContainer span{
+    color: #2c98f0;   
+}
+
+.leftContainer h1{
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+    font-family: "Caveat", cursive;
+}
+
+.leftContainer img{
+    margin-top: 15px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.leftContainer ul{
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.leftContainer ul li{
+    list-style: none;
+    font-family: "Quicksand", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 17px;
+    cursor: pointer;
+    line-height: 1.35;
+    /* margin-right:20px; */
+    letter-spacing: 1px;
+    transition:all 0.4s ease-in-out;
+  /* transition-duration: 2s; */
+}
+.leftContainer ul li:hover{
+    color: #2c98f0;
+    margin-left: 25px;
+    text-shadow: #333;
+}
+
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/08/18/55/coconut-tree-1892861_640.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90vh;
+    background-color:  #EFEFEF;
+    width: 65vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.rightContainer p{
+    font-size: 55px;
+    font-weight: 500;
+    margin: 20px;
+    margin-left: 45px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.rightContainer p:nth-last-child(3) {
+    margin-top:0;
+}
+.rightContainer p:nth-last-child(2){
+    font-size: 1.3rem;
+    width: 70%;
+    color:#838383;
+    letter-spacing: .5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.rightContainer button{
+    height: 30px;
+    margin-left: 45px;
+    border:1.4px solid black;
+    color: rgb(71, 70, 70);
+    margin-top: 10px;
+    width: 150px;
+    letter-spacing: 1px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.rightContainer button:hover{
+    background-color: black;
+    border:1px solid #2c98f0;
+    color: white;
+}
+.link {
+    text-decoration: none;
+   
+  }
+
+  a:active {
+    color: #f00;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color:greenyellow
+  }
+
+.buttons{
+    display: flex;
+}
+.buttons button:nth-child(2){
+    background-color: black;
+    color: white;
+}

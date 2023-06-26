@@ -1,0 +1,86 @@
+/* Add the following CSS to your work.module.css file */
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .rightContainer {
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to top left, #454242, #dddcdc);
+    /* background-image: url("https://img.freepik.com/free-vector/white-background-with-hexagonal-line-pattern-design_1017-28442.jpg?w=1060&t=st=1687756626~exp=1687757226~hmac=23a00983fd1fdf5595b0f6029bd27c0c25943f6c713f7d57cb199476861d042f"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    overflow: auto;
+    object-fit: cover;
+    margin: 0;
+    height: 90vh;
+    background-color: #efefef;
+    width: 65vw;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .work {
+      margin-bottom: 20px;
+    }
+  
+  .rightContainer p:first-child {
+    color: rgb(60, 59, 59);
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 30px;
+    letter-spacing: 5px;
+}
+
+.rightContainer p:nth-of-type(2) {
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.work {
+    font-family: "Quicksand", Arial, sans-serif;
+    background-color: #ebe9e9;
+    padding: 20px;
+    width: 85%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .work h2 span {
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.work h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .work p {
+    color: #666;
+    font-size: 16px;
+    /* letter-spacing: 0px; */
+    line-height: 1.5;
+  }
+  
