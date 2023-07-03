@@ -53,6 +53,8 @@ body{
     flex-direction: column;
     width: 300px;
     margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   }
   
   .field {
@@ -60,6 +62,7 @@ body{
   }
   
   form label {
+    
       margin-top: 20px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -109,9 +112,117 @@ body{
     font-size: 3rem;
     /* transition: all 10s ease-in; */
 }
+.rightcontainer form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loaderCircle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-top: 2px solid #2c98f0;
+  border-right: 2px solid transparent;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 .icons:hover {
     font-size: 4rem;
     transition: font-size 1s ease-in-out;
     margin: 0;
+  }
+  @media (max-width: 768px) {
+    .rightContainer{
+    background-image: url("https://images.pexels.com/photos/7130496/pexels-photo-7130496.jpeg?auto=compress&cs=tinysrgb&w=600");
+      object-fit: fill;
+      background-position: center;
+      background-size:150vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    flex-direction: column;
+
+      /* margin-left: 45px; */
+    }
+    input,
+  textarea {
+    width: 250px;
+
+  }
+  .socialIcons{
+    margin-right: 45px;
+}
+  }
+  @media (max-width: 480px) {
+    .container{
+      display: block;
+      flex-direction: column;
+  }
+    input,
+    textarea {
+      width: 200px;
+      /* height: 20px; */
+    }
+    .icons{
+      cursor: pointer;
+      font-size: 1rem;
+      /* transition: all 10s ease-in; */
+  }
+  .rightContainer p:first-child {
+  
+    font-size: 10px;
+   
+}
+
+.rightContainer p:nth-of-type(2) {
+   
+    font-size: 20px;
+    
+}
+
+form label{
+  font-size: 12px;
+  /* justify-content: flex-start; */
+}
+  }
+  @media (max-width: 430px) {
+    .container{
+      display: block;
+      flex-direction: column;
+  }
+      input,
+    textarea {
+      width: 150px;
+      /* height: 20px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .rightContainer form {
+      width: 130px;
+    }
+    .rightContainer{
+      width: 100vw;
+      height: 100vh;
+  }
   }

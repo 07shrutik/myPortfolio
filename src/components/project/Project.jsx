@@ -2,9 +2,14 @@ import React from "react";
 import styles from "./Project.module.css";
 import Sidebar from "../sidebar/Sidebar";
 
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Navbar from "../Navbar";
 const Project = () => {
+  const match = useMediaQuery("(max-width:600px)");
+
   return (
     <div className={styles.container}>
+      {match && <Navbar />}
       <Sidebar />
       <div className={styles.rightContainer}>
         <h2>My Projects</h2>
@@ -107,7 +112,7 @@ const Project = () => {
             src="https://img.freepik.com/free-icon/correct_318-924721.jpg?size=626&ext=jpg&uid=R107775876&ga=GA1.2.1606550622.1665819561&semt=sph"
             alt="Project 2"
           />
-          <h3>GoogleDoc-Clone</h3>
+          <h3>GoogleDocs-Clone</h3>
           <p>
             The Google Docs Clone project is a collaborative document editing
             tool similar to Google Docs. Users can create, edit, and format

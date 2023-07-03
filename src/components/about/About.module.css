@@ -29,11 +29,7 @@ body{
     background-color:  #EFEFEF;
     width: 65vw;
 }
-.rightContainer p:first-child{
-    color:#3a3a3a;
-    font-size: 65px;
-    font-family:'ProximaNovaT';
-}
+
 .rightContainer p{
     margin: 0;
     margin-top: 30px;
@@ -54,14 +50,59 @@ body{
     display: flex;
     gap: 30px;
 }
+.leftContainer img{
+    margin-top: 15px;
+    border-radius: 50%;
+    height: 180px;
+    width: 1800px;
+    object-fit: cover;
+}
 .icons{
     cursor: pointer;
     font-size: 3rem;
     /* transition: all 10s ease-in; */
 }
-
+.heading p{
+    color:#3a3a3a;
+    font-size: 65px;
+    font-family:'ProximaNovaT';
+    
+}
 .icons:hover {
     font-size: 4rem;
     transition: font-size 1s ease-in-out;
     margin: 0;
+  }
+  @media (max-width: 430px) {
+    .container{
+        display: block;
+        flex-direction: column;
+    }
+    .rightContainer{
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+        background-color:rgb(226, 226, 226);
+    }
+    .rightContainer p{
+       width: 77%;
+       color: #3a3a3a;
+        font-size: 16px;
+    }
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        width: max-content;
+        align-items: center;
+    }
+    .heading p{
+        font-size: 30px;
+        /* margin: 0; */
+    }
+    .heading img{
+        height: 100px;
+        width: 150px;
+        margin: 0;
+    }
+    
   }

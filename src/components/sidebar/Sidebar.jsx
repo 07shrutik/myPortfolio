@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className={styles.leftContainer}>
       <img src={pic1} alt="Portfolio Image" />
       <h1>Shrutik Mahajan</h1>
-      <p>Frontend Developer</p>
+      <p>Frontend Web Developer Trainee </p>
       <ul>
         <NavLink
           exact

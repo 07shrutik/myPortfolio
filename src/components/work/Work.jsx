@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./work.module.css";
 import Sidebar from "../sidebar/Sidebar";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Navbar from "../Navbar";
 
 const Work = () => {
+  const match = useMediaQuery("(max-width:600px)");
+
   const work = [
     {
       workname: "Teaching Assistant at FunctionUp",
@@ -23,6 +27,7 @@ const Work = () => {
 
   return (
     <div className={styles.container}>
+      {match && <Navbar />}
       <Sidebar />
       <div className={styles.rightContainer}>
         <p>EXPERIENCE</p>

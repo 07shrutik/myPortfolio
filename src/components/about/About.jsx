@@ -5,20 +5,30 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import pic1 from "../../assets/pic1.jpg";
+import Navbar from "../Navbar";
 import { NavLink } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
+// import { useMediaQuery } from "@mui/material";
 const About = () => {
+  const match = useMediaQuery("(max-width:600px)");
   return (
     <div className={styles.container}>
+      {match && <Navbar />}
       <Sidebar />
       <div className={styles.rightContainer}>
-        <p>About me.</p>
+        <div className={styles.heading}>
+          <p>About me.</p>
+
+          {match && <img src={pic1} alt="Portfolio Image" />}
+        </div>
         <p>
           Hi, I'm Shrutik Mahajan, a 23 year old passionate frontend developer
           from Burhanpur, Madhya Pradesh. I recently completed my BTech in
           computer science engineering, which has equipped me with a strong
           foundation in technical knowledge. With expertise in React.js,
-          JavaScript, HTML, and CSS, I specialize in creating captivating user
-          experiences.
+          JavaScript, HTML, CSS, Redux and Recoil I specialize in creating
+          captivating user experiences.
         </p>
         <div className={styles.socialIcons}>
           <FacebookIcon
@@ -27,6 +37,9 @@ const About = () => {
               color: "#3b5998",
               fontSize: "3rem",
               transition: "all .5s ease-in-out",
+              ...(match && {
+                fontSize: "2rem",
+              }),
             }}
           />
           <NavLink
@@ -41,6 +54,9 @@ const About = () => {
                 // background: "white",
                 fontSize: "3rem",
                 transition: "all 0.5s ease-in-out",
+                ...(match && {
+                  fontSize: "2rem",
+                }),
                 // marginLeft: "17px",
               }}
             />
@@ -57,6 +73,9 @@ const About = () => {
                 fontSize: "3rem",
                 // marginLeft: "17px",
                 transition: "all .5s ease-in-out",
+                ...(match && {
+                  fontSize: "2rem",
+                }),
               }}
             />
           </NavLink>
@@ -68,6 +87,9 @@ const About = () => {
                 fontSize: "3rem",
                 // marginLeft: "17px",
                 transition: "all .5s ease-in-out",
+                ...(match && {
+                  fontSize: "2rem",
+                }),
               }}
             />
           </NavLink>

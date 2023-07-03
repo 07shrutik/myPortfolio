@@ -3,14 +3,19 @@ import styles from "./Home.module.css";
 // import pic1 from "./../../assets/pic1.jpg";
 // import vector from "./../../assets/19199025.jpg";
 import "@fontsource/caveat";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import ReactTyped from "react-typed";
 // import { Link, NavLink } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
 import { Link } from "react-router-dom";
 import resume from "../../assets/Resume_shrutik.pdf";
+import Navbar from "../Navbar";
 const Home = () => {
+  const match = useMediaQuery("(max-width:600px)");
+
   return (
     <div className={styles.container}>
+      {match && <Navbar />}
       <Sidebar />
       <div className={styles.rightContainer}>
         <p>Hi!</p>

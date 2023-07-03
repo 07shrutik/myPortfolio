@@ -36,7 +36,7 @@ body{
     color:black;
 }
 .leftContainer span{
-    color: #2c98f0;   
+    color: red;   
 }
 
 .leftContainer h1{
@@ -91,6 +91,7 @@ body{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .current li{
@@ -100,3 +101,9 @@ a{
     outline: #2c98f0;
     margin-left: 25px;
 }
+@media (max-width: 768px) {
+    .leftContainer{
+        display: none;
+    }
+  }
+  

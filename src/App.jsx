@@ -6,11 +6,16 @@ import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
 import Contact from "./components/contact/Contact";
 import Project from "./components/project/Project";
+// import useMediaQuery from "@mui/material/useMediaQuery";
+// import Navbar from "./components/Navbar";
 
 const App = () => {
+  // const match = useMediaQuery("(max-width:400px)");
+
   return (
     <div>
       <BrowserRouter>
+        {/* {match && <Navbar />} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

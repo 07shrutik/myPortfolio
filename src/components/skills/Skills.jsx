@@ -2,7 +2,11 @@ import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import styles from "./Skills.module.css";
 import RateSkill from "./RateSkill";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Navbar from "../Navbar";
 const Skills = () => {
+  const match = useMediaQuery("(max-width:600px)");
+
   let myskills = [
     { skillName: "React-js", rating: "73%", color: "#2c98f0" },
     { skillName: "JavaScript", rating: "74%", color: "#ec5453" },
@@ -13,6 +17,7 @@ const Skills = () => {
   ];
   return (
     <div className={styles.container}>
+      {match && <Navbar />}
       <Sidebar />
       <div className={styles.rightContainer}>
         <p>MY SPECIALITY</p>

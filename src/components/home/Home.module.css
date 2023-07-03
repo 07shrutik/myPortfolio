@@ -124,16 +124,79 @@ body{
     color: #f00;
   }
   a{
-    color: white;
+    color: black;
   }
   a:hover{
-    color:greenyellow
+    color:rgb(17, 201, 78)
   }
 
 .buttons{
     display: flex;
+    gap: 10px;
+    color: white;
 }
 .buttons button:nth-child(2){
-    background-color: black;
+    background-color: white;
     color: white;
+}
+@media (max-width: 480px) {
+    .container{
+        display: block;
+        flex-direction: column;
+    }
+    .rightContainer{
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+        background-color:rgb(228, 234, 222);
+    }
+    
+    
+    .rightContainer p{
+        font-size: 32px;
+        font-weight: 500;
+        margin: 20px;
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        /* gap: 5px; */
+    }
+    .rightContainer p:nth-last-child(3) {
+        margin-top:0;
+    }
+    .rightContainer p:nth-last-child(2){
+        font-size: 1rem;
+        width: 88%;
+        color:#5c5b5b;
+        letter-spacing: .5px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .rightContainer button{
+        height: 25px;
+        margin-left: 20px;
+        border:1.4px solid black;
+        color: rgb(71, 70, 70);
+        margin-top: 5px;
+        width: 120px;
+        letter-spacing: 1px;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    .buttons button:nth-child(2){
+        height: 25px;
+        margin-right: 20px;
+        border:1.4px solid black;
+        color: rgb(71, 70, 70);
+        margin-top: 5px;
+        width: 190px;
+        letter-spacing: 1px;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+        color: black;
+    }
 }

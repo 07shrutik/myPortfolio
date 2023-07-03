@@ -47,3 +47,26 @@ body{
     margin-left: 45px;
     font-family:'ProximaNovaT';
 }
+@media (max-width: 768px) {
+    .container{
+        display: block;
+        flex-direction: column;
+    }
+    .rightContainer{
+        background-image: none;
+        background-color: aliceblue;
+        width: 100vw;
+        height: 100vh;
+    }
+    .skill{
+        width: 80%;
+    }
+    .rightContainer p{
+        color: #999999;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .rightContainer p:nth-child(2){
+        font-size: 45px;
+    }
+}
